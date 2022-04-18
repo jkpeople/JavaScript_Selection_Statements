@@ -3,7 +3,7 @@ console.log("Follow the steps in the README.md file to complete the exercises:\n
 
 // Exercise 1
 let numToGuess = 5;
-let userNum = prompt("Guess a Number Between 1 and 10");
+let userNum = prompt("Guess a Number Between 1 and 10")
 
 if (numToGuess > userNum) {
     alert("Too low")
@@ -14,12 +14,7 @@ if (numToGuess > userNum) {
 }
 
 // Exercise 2
-
-let userBirthMonth = prompt(
-    "What month were you born?\nType in the abbreviated month (ex: January -> Jan):"
-); 
-
-// abbreviated, tell them the reason 
+let userBirthMonth = prompt("What month were you born? Type in the abbreviated month (ex: January -> Jan)");
 
 switch (userBirthMonth) {
     case "Dec":
@@ -36,12 +31,12 @@ switch (userBirthMonth) {
     case "Jul":
     case "Aug":
         alert("You were born in summer");
+        break;
     case "Sep":
     case "Oct":
     case "Nov":
         alert("You were born in fall");
         break;
     default:
-        alert("You gave me an incorrect month format.");
-
+        alert("You gave an incorrect month format.");
 }
